@@ -18,7 +18,7 @@ body {
   height: 800px;
   text-align: center; 
   color: #FFFFFF;
-  background: url(images/bg.jpg) no-repeat center center fixed; 
+  background: url(images/bg.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -90,5 +90,55 @@ body {
 
 .nav ul li:hover{
 	background: #117bff;
-	transition: background .5s;  
+	transition: background .5s; 
+}
+
+.main .container {
+	margin: 80px auto;
+}
+
+.main img {
+  float: left;
+ 
+    margin: 50px 80px 50px 0;
+}
+
+/* Jumbotron */
+.jumbotron {
+	height: 600px; 
+	text-align: right;
+	color: #FFF;
+	background: url(images/jumbotron_bg.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.jumbotron .container {
+	position: relative;
+	top: 220px;
+}
+
+.footer { 
+	font-size: 14px;
+	background-color: #000;
+  	color: #fff;
+  	padding: 30px 0;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
 }
